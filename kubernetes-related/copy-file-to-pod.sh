@@ -1,0 +1,8 @@
+#!/bin/bash
+
+LOCAL_FILE_PATH=$1
+POD_NAME=$2
+CONTAINER_NAME=$3
+
+
+kubectl cp $LOCAL_FILE_PATH $POD_NAME/path-inside-pod -c $CONTAINER_NAME -n $NAMESPACE
