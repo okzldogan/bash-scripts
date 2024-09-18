@@ -17,13 +17,11 @@ do
     if [[ $DISK_USAGE == *M* ]]; then
         DISK_USAGE=$(echo $DISK_USAGE | awk '{ GB = $1 / 1024 ; print GB "GB" }')
         echo $DIRECTORY, $DISK_USAGE
-    else if [[ $DISK_USAGE == *G* ]]; then
+    elif [[ $DISK_USAGE == *G* ]]; then
         DISK_USAGE=$(echo $DISK_USAGE | awk '{ GB = $1 ; print GB }')
         echo $DIRECTORY, $DISK_USAGE
-    else if [[ $DISK_USAGE == *K* ]]; then
+    else [[ $DISK_USAGE == *K* ]]
         DISK_USAGE=$(echo $DISK_USAGE | awk '{ GB = $1 / 1024 / 1024 ; print GB "GB" }')
         echo $DIRECTORY, $DISK_USAGE
-    fi
-    fi
     fi
 done

@@ -2,10 +2,10 @@
 
 # Set or pass in the variables from the command line
 
-DESTINATION_CLOUDSQL_INSTANCE=$1
-SOURCE_CLOUDSQL_INSTANCE=$2
-DESTINATION_PROJECT_ID=$3
-SOURCE_PROJECT_ID=$4
+DESTINATION_CLOUDSQL_INSTANCE=my-destination-cloudsql-instance
+SOURCE_CLOUDSQL_INSTANCE=my-source-cloudsql-instance
+DESTINATION_PROJECT_ID=my-destination-project-id
+SOURCE_PROJECT_ID=my-source-project-id
 
 BUCKET_REGION=europe-west1
 

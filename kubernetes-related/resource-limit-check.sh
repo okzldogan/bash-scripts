@@ -1,9 +1,11 @@
 #!/bin/bash
 
-NAMESPACE=$1
+# Pass the namespace, CPU limit and Memory limit as arguments
+NAMESPACE=mynamespace
 
-CPU_LIMIT_TO_CHECK=$2
-MEMORY_LIMIT_TO_CHECK=$3
+# Insert values without the "m" and "Mi" suffix
+CPU_LIMIT_TO_CHECK=mycpu-limit
+MEMORY_LIMIT_TO_CHECK=mymemory-limit
 
 # Get all the deployments in the github-runner namespace
 

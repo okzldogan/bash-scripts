@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# List all directories with changes in the current root directory
+# Run this script from the root of the repository
+
+# List all directories with changes
 
 # Get the file paths with changes
 DIRECTORIES_WITH_CHANGES=$(git diff --name-only|sed 's/\/[^/]*$//'|sort -u)

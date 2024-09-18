@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# List all directories with changes in the current root directory
+# Run the script from the root of the repository.
 
-# Get the current directory
-MAIN_DIR=$(pwd)
+# List all directories with changes in the current root directory
 
 # Get the file paths with changes based on git diff
 DIRECTORIES=$(git diff --name-only)

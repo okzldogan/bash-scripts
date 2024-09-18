@@ -1,6 +1,7 @@
 #!/bin/bash
 
-NAMESPACE=$1
+# Pass the namespace as an argument
+NAMESPACE=my-namespace
 
 # Get the deployment names
 
