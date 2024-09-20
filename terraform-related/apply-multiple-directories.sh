@@ -2,8 +2,6 @@
 
 # Run the script from the root of the repository.
 
-# List all directories with changes in the current root directory
-
 # Get the file paths with changes based on git diff
 DIRECTORIES=$(git diff --name-only)
 
