@@ -7,7 +7,7 @@ SOURCE_CLOUDSQL_INSTANCE=my-source-cloudsql-instance
 DESTINATION_PROJECT_ID=my-destination-project-id
 SOURCE_PROJECT_ID=my-source-project-id
 
-BUCKET_REGION=europe-west1
+BUCKET_REGION=my-gcp-region
 
 BUCKET_NAME=$DESTINATION_CLOUDSQL_INSTANCE-db-import-bucket
 
